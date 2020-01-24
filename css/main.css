@@ -1,0 +1,196 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+a img {
+  border: none;
+}
+
+/* END RESET*/
+/* GLOBAL STYLES */
+body {
+  background-color: #d7507a;
+  font-family: "Impact", serif;
+}
+
+/* HERO SECTION */
+#hero {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  position: relative;
+}
+
+.hero {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  /* height: 100vh; */
+  position: relative;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-seasons {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 40%;
+  transform: translate(0, -50%);
+}
+
+.hero-seasons span {
+  position: relative;
+  transform: translate(50, 0);
+}
+
+.hero-seasons h1 {
+  color: rgb(251, 221, 116);
+  font-family: "Impact", serif;
+  font-size: 15vw;
+  letter-spacing: 5px;
+}
+
+.hero-seasons h1:before {
+  color: rgba(238, 238, 238, 0.8);
+  font-size: 5.5vw;
+  content: "tour 2020-21";
+  bottom: -7vh;
+  position: absolute;
+  right: 22vw;
+  z-index: -1;
+}
+
+.hero-seasons img {
+  width: 10vh;
+}
+
+.tagline {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(25%, -50%);
+  width: 70%;
+}
+
+.tagline h2 {
+  color: rgba(0, 201, 255, 0.5);
+  font-family: "Impact", serif;
+  font-size: 3vw;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+/* TOUR DATES */
+.tour {
+  color: rgb(251, 221, 116);
+  font-size: 5vw;
+  /* letter-spacing: -1px; */
+  margin: auto;
+  padding: 10vh 0;
+  /* text-align: center; */
+  width: 60%;
+  /* min-height: 200vh; */
+  /* background: rgb(101, 175, 194); */
+}
+
+.tour h1 {
+  margin: .3em 0 0 0;
+}
+
+.tour h1 div {
+  color: rgba(0, 201, 255, 0.5);
+  /* padding-left: 2.5rem; */
+  display: inline;
+  position: absolute;
+  right: 15vw;
+}
+
+.tour img {
+  width: 8vh;
+  margin-bottom: 3vw;
+}
+
+.tour h4 {
+  color: rgba(238, 238, 238, 0.8);
+  font-size: 2vw;
+}
+
+.tour h4 span {
+  color: #ff6e6c;
+}
+
+/*.tour h1 span {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/spectrum.svg);
+  background-repeat: repeat-x;
+  background-size: 61vw 0.2em;
+  background-position: left bottom 5px;
+  background-position-x: var(--scrollPos);
+}*/
+/* .tour h1 span:nth-of-type(2) {
+  background-position-x: calc(var(--offset) + var(--scrollPos));
+} */
