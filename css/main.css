@@ -62,7 +62,7 @@ body {
 }
 @font-face {
   font-family: 'Impact';
-  src: url('font/impact.ttf') format('truetype');
+  src: url('https://taylrd.github.io/tour/font/impact.ttf') format('truetype');
 }
 
 /* HERO SECTION */
