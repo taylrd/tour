@@ -62,7 +62,7 @@ body {
 }
 @font-face {
   font-family: 'Impact';
-  src: url('impact.ttf');
+  src: url('impact.ttf') format('truetype');
 }
 
 /* HERO SECTION */
