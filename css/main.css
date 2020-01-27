@@ -56,13 +56,13 @@ a img {
 
 /* END RESET*/
 /* GLOBAL STYLES */
-body {
-  background-color: #d7507a;
-  font-family: "Impact", serif;
-}
 @font-face {
   font-family: 'Impact';
   src: url('https://taylrd.github.io/tour/font/impact.ttf') format('truetype');
+}
+body {
+  background-color: #d7507a;
+  font-family: "Impact", serif;
 }
 
 /* HERO SECTION */
