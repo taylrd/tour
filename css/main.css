@@ -58,7 +58,7 @@ a img {
 /* GLOBAL STYLES */
 @font-face {
   font-family: 'Impact';
-  src: url('font/impact.ttf') format('truetype');
+  src: url('/font/impact.ttf') format('truetype');
 }
 body {
   background-color: #d7507a;
