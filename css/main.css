@@ -1,3 +1,5 @@
+/* @import url("//hello.myfonts.net/count/3ae983"); */
+
 /* RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -60,6 +62,16 @@ a img {
   font-family: 'Impact';
   src: url('/font/impact.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Heavy';
+  src: url('/font/3AE983_0_0.eot');
+  src: url('/font/3AE983_0_0.eot?#iefix') format('embedded-opentype'),
+    url('/font/3AE983_0_0.woff2') format('woff2'),
+    url('/font/3AE983_0_0.woff') format('woff'),
+    url('/font/3AE983_0_0.ttf') format('truetype');
+}
+
 body {
   background-color: #e73c7e;
   display: flex;
@@ -116,7 +128,7 @@ body {
 
 .hero-seasons h1 {
   color: rgb(251, 221, 116);
-  font-family: "Impact", serif;
+  font-family: "AvenirNextLTPro-Heavy", serif;
   font-size: 15vw;
   letter-spacing: 5px;
 }
