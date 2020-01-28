@@ -69,14 +69,15 @@ a img {
   src: url('/font/3AE983_0_0.eot?#iefix') format('embedded-opentype'),
     url('/font/3AE983_0_0.woff2') format('woff2'),
     url('/font/3AE983_0_0.woff') format('woff'),
-    url('/font/3AE983_0_0.ttf') format('truetype');
+    url('/font/3AE983_0_0.ttf') format('truetype'),
+    url('/Users/corey/Web/test/font/3AE983_0_0.woff');
 }
 
 body {
   background-color: #e73c7e;
   display: flex;
   flex-direction: column;
-  font-family: "Impact", serif;
+  font-family: "AvenirNextLTPro-Heavy", serif;
   min-height: 100vh;
 }
 
