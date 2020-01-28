@@ -61,8 +61,11 @@ a img {
   src: url('/font/impact.ttf') format('truetype');
 }
 body {
-  background-color: #d7507a;
+  background-color: #e73c7e;
+  display: flex;
+  flex-direction: column;
   font-family: "Impact", serif;
+  min-height: 100vh;
 }
 
 /* HERO SECTION */
@@ -80,6 +83,7 @@ body {
   animation: gradient 15s ease infinite;
   /* height: 100vh; */
   position: relative;
+  display: none;
 }
 
 @keyframes gradient {
@@ -118,7 +122,8 @@ body {
 }
 
 .hero-seasons h1:before {
-  color: rgba(238, 238, 238, 0.8);
+  /* color: rgba(238, 238, 238, 0.8); */
+  color: #fff;
   font-size: 5.5vw;
   content: "tour 2020-21";
   bottom: -7vh;
@@ -127,12 +132,15 @@ body {
   z-index: -1;
 }
 
-.hero-seasons img {
-  width: 10vh;
+img {
+  width: 8vh;
 }
 
 .tagline {
+  animation-delay: 2s;
+  animation-duration: 6s;
   color: #fff;
+  letter-spacing: 0.3em;
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -142,11 +150,9 @@ body {
 }
 
 .tagline h2 {
-  color: rgba(0, 201, 255, 0.5);
+  /* color: rgba(0, 201, 255, 0.7); */
   font-family: "Impact", serif;
   font-size: 3vw;
-  animation-duration: 3s;
-  animation-delay: 2s;
 }
 
 /* TOUR DATES */
@@ -167,7 +173,7 @@ body {
 }
 
 .tour h1 div {
-  color: rgba(0, 201, 255, 0.5);
+  color: rgba(238, 238, 238, 0.8);
   /* padding-left: 2.5rem; */
   display: inline;
   position: absolute;

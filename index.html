@@ -23,8 +23,8 @@
   </section>
   <section class="hero">
     <div class="tour">
-      <!-- <img src="images/logo.png" alt="DanceMakers Inc."> -->
-      <h1 data-hover="Hyatt Hill Country Resort" aria-label="San Antonio, Tx" class="animated fadeIn">
+      <img src="images/logo.png" alt="DanceMakers Inc.">
+      <h1 data-hover="Hyatt Hill Country Resort" aria-label="San Antonio, Tx">
         SAN ANTONIO, TX <div>10.30-11.1.20</div>
       </h1>
       <h4>Hyatt Regency Hill Country Resort & Spa</h4>
@@ -45,7 +45,7 @@
       </h1>
       <h4>Wyndham Hotel</h4>
       <h1 data-hover="Sheraton KC Hotel at Crown Center *NEW" aria-label="Kansas City, MO">
-          KANSAS CITY, MO <div>1.22-24.21</div>
+        KANSAS CITY, MO <div>1.22-24.21</div>
       </h1>
       <h4>Sheraton KC Hotel at Crown Center <span>*NEW</span></h4>
       <h1 data-hover="Greater Richmond Convention Center" aria-label="Richmond, VA">
@@ -104,16 +104,18 @@
         MYRTLE BEACH, SC <div>6.19-24.21</div>
       </h1>
       <h4>Shearton Myrtle Beach Convention Center</h4>
-      </div>
+    </div>
   </section>
   <script src="js/scroll.js" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript">
     $(function() {
       setTimeout(function() {
-        $("#hero").fadeOut(700);
-      }, 5000)
+        $("#hero").fadeOut(500);
+      }, 6000)
     })
+    // $(".hero").hide();
+    $('.hero').delay(6500).fadeIn();
   </script>
 </body>
 
