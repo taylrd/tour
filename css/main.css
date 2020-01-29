@@ -111,6 +111,14 @@ body {
     background-position: 0% 50%;
   }
 }
+#logo {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  top: 10%;
+  transform: translate(0, -50%);
+  width: 15vh;
+}
 
 .hero-seasons {
   color: #fff;
@@ -144,6 +152,12 @@ body {
   position: absolute;
   right: 12vw;
   z-index: -1;
+}
+
+.hero-seasons svg {
+  animation-delay: .3s;
+  animation-duration: 3s;
+  width: 15vh;
 }
 
 img {
