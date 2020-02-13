@@ -56,10 +56,6 @@ a img {
 
 /* END RESET*/
 /* GLOBAL STYLES */
-@font-face {
-  font-family: 'Impact';
-  src: url('/font/impact.ttf') format('truetype');
-}
 
 @font-face {
   font-family: 'AvenirNextLTPro-Heavy';
@@ -71,25 +67,68 @@ a img {
     url('/Users/corey/Web/test/font/3AE983_0_0.woff');
 }
 
+@font-face {
+  font-family: 'AvenirNextLTPro-Bold';
+  src: url('/font/3B01AD_0_0.eot');
+  src: url('/font/3B01AD_0_0.eot?#iefix') format('embedded-opentype'),
+    url('/font/3B01AD_0_0.woff2') format('woff2'),
+    url('/font/3B01AD_0_0.woff') format('woff'),
+    url('/font/3B01AD_0_0.ttf') format('truetype'),
+    url('/Users/corey/Web/test/font/3B01AD_0_0.woff');
+}
+
 body {
-  background-color: #e73c7e;
+  background-color: #DC3F64;
   display: flex;
   flex-direction: column;
   font-family: "AvenirNextLTPro-Heavy", serif;
   min-height: 100vh;
 }
 
-/* HERO SECTION */
-#hero {
-  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-  background-color: #DC3F64;
-  background-size: 400% 400%;
+/* FULL HERO SECTION */
+.full-hero {
+  /* background-color: #DC3F64; */
+  background-size: cover;
+  background-image: url(../images/bg_hero.png);
+  background-position: top left;
   animation: gradient 15s ease infinite;
   height: 100vh;
   position: relative;
 }
 
-.hero {
+.header {
+  height: 200px;
+  position: relative;
+  width: 100%;
+}
+.header-logo {
+  left: 50%;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-section {
+  margin: 6rem auto;
+  max-width: 980px;
+  width: 90vw;
+}
+
+.tagline {
+  animation-delay: 1.5s;
+  animation-duration: 3s;
+  color: #fff;
+  /* letter-spacing: 0.3em; */
+  position: relative;
+  text-align: center;
+}
+
+.tagline h2 {
+  font-family: "AvenirNextLTPro-Bold", serif;
+  font-size: 3.5vw;
+}
+
+/* TOUR DATES */
+.hero-dates {
   background: linear-gradient(-45deg, #DF594F, #DC3F64, #58B2D0, #6F4767);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -111,79 +150,7 @@ body {
     background-position: 0% 50%;
   }
 }
-#logo {
-  color: #fff;
-  position: relative;
-  text-align: center;
-  top: 10%;
-  transform: translate(0, -50%);
-  width: 15vh;
-}
 
-.hero-seasons {
-  color: #fff;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  top: 40%;
-  transform: translate(0, -50%);
-}
-
-.hero-seasons span {
-  position: relative;
-  transform: translate(50, 0);
-}
-
-.hero-seasons h1 {
-  animation-delay: .5s;
-  animation-duration: 3s;
-  /* color: rgb(251, 221, 116); */
-  color: rgba(238, 238, 238, 0.8);
-  font-family: "AvenirNextLTPro-Heavy", serif;
-  font-size: 15vw;
-  letter-spacing: 5px;
-}
-
-.hero-seasons h1:before {
-  color: rgba(111, 71, 103, 0.5);
-  font-size: 5.5vw;
-  content: "tour 2020-21";
-  bottom: -3vh;
-  position: absolute;
-  right: 12vw;
-  z-index: -1;
-}
-
-.hero-seasons svg {
-  animation-delay: .3s;
-  animation-duration: 3s;
-  width: 15vh;
-}
-
-img {
-  width: 8vh;
-}
-
-.tagline {
-  animation-delay: 2s;
-  animation-duration: 6s;
-  color: #fff;
-  letter-spacing: 0.3em;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  top: 50%;
-  transform: translate(25%, -50%);
-  width: 70%;
-}
-
-.tagline h2 {
-  /* color: rgba(0, 201, 255, 0.7); */
-  font-family: "Impact", serif;
-  font-size: 3vw;
-}
-
-/* TOUR DATES */
 .tour {
   color: rgb(251, 221, 116);
   font-size: 4vw;
@@ -201,8 +168,12 @@ img {
 }
 
 .tour h1 div {
-  color: rgba(238, 238, 238, 0.8);
+  /* color: rgba(238, 238, 238, 0.8); */
+  color: #fff;
   /* padding-left: 2.5rem; */
+  font-family: "Forza A", "Forza B";
+  font-style: normal;
+  font-weight: 700;
   display: inline;
   position: absolute;
   right: 10vw;
@@ -214,21 +185,11 @@ img {
 }
 
 .tour h4 {
-  color: rgba(238, 238, 238, 0.8);
+  /* color: rgba(238, 238, 238, 0.8); */
+  color: #fff;
   font-size: 2vw;
 }
 
 .tour h4 span {
   color: #ff6e6c;
 }
-
-/*.tour h1 span {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/spectrum.svg);
-  background-repeat: repeat-x;
-  background-size: 61vw 0.2em;
-  background-position: left bottom 5px;
-  background-position-x: var(--scrollPos);
-}*/
-/* .tour h1 span:nth-of-type(2) {
-  background-position-x: calc(var(--offset) + var(--scrollPos));
-} */
