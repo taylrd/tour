@@ -203,15 +203,14 @@ body {
     transform: translate(-50%, -50%);
   }
 
-  .tagline {
+  /* .tagline {
     animation-delay: 1.5s;
     animation-duration: 3s;
     color: #fff;
     display: none;
-    /* letter-spacing: 0.3em; */
     position: relative;
     text-align: center;
-  }
+  } */
 
   .tagline h2 {
     font-family: "AvenirNextLTPro-Bold", serif;
