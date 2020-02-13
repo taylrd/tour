@@ -207,6 +207,7 @@ body {
     animation-delay: 1.5s;
     animation-duration: 3s;
     color: #fff;
+    display: none;
     /* letter-spacing: 0.3em; */
     position: relative;
     text-align: center;
