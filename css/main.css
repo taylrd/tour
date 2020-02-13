@@ -195,7 +195,11 @@ body {
 }
 
 @media (max-width: 800px) {
+  .header {
+    height: 100px;
+  }
   .home-section {
+    margin: 30vh auto;
     width: 95vw;
   }
   .tagline h2 {
