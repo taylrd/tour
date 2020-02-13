@@ -184,11 +184,6 @@ body {
   right: 10vw;
 }
 
-.tour img {
-  width: 8vh;
-  margin-bottom: 3vw;
-}
-
 .tour h4 {
   /* color: rgba(238, 238, 238, 0.8); */
   color: #fff;
@@ -197,4 +192,30 @@ body {
 
 .tour h4 span {
   color: #ff6e6c;
+}
+
+@media (max-width: 800px) {
+  .home-section {
+    margin: 3rem auto;
+    max-width: 800px;
+    width: 90vw;
+    left: 50%;
+    position: relative;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tagline {
+    animation-delay: 1.5s;
+    animation-duration: 3s;
+    color: #fff;
+    /* letter-spacing: 0.3em; */
+    position: relative;
+    text-align: center;
+  }
+
+  .tagline h2 {
+    font-family: "AvenirNextLTPro-Bold", serif;
+    font-size: 3.5vw;
+  }
 }
