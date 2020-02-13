@@ -196,24 +196,15 @@ body {
 
 @media (max-width: 800px) {
   .home-section {
-    margin: 3rem auto;
-    left: 50%;
-    position: relative;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: 95vw;
   }
-
-  /* .tagline {
-    animation-delay: 1.5s;
-    animation-duration: 3s;
-    color: #fff;
-    display: none;
-    position: relative;
-    text-align: center;
-  } */
-
   .tagline h2 {
-    font-family: "AvenirNextLTPro-Bold", serif;
-    font-size: 5vw;
+    font-size: 6vw;
+  }
+  .tour {
+    width: 95vw;
+  }
+  .tour h1 div {
+    right: 5vw;
   }
 }
