@@ -101,6 +101,11 @@ body {
   position: relative;
   width: 100%;
 }
+.header-dates {
+  height: 100px;
+  position: relative;
+  width: 100%;
+}
 .header-logo {
   left: 50%;
   position: relative;
